@@ -93,7 +93,7 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <Link href="#home" className="text-xl font-bold font-headline">
-            Portfolio Pro
+            Portfolio
           </Link>
           <div className="flex items-center gap-4">
             <NavLinks />
