@@ -44,7 +44,7 @@ const SkillsMarquee = () => {
       }}
     >
       {/* To change the speed, adjust the duration in the className below (e.g., animate-[marquee_40s_linear_infinite]) */}
-      <div className="flex animate-[marquee_60s_linear_infinite] py-4">
+      <div className="flex animate-[marquee_45s_linear_infinite] py-4">
         {extendedSkills.map((skill, index) => (
           <div key={index} className="mx-4 flex-shrink-0">
             <SkillCard skill={skill} />
