@@ -4,8 +4,9 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Github, Linkedin, Menu, Mail } from 'lucide-react';
+import { Github, Linkedin, Menu, Mail, Moon, Sun } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useTheme } from 'next-themes';
 
 const NAV_ITEMS = [
   { id: 'home', label: 'Home' },
@@ -14,6 +15,23 @@ const NAV_ITEMS = [
   { id: 'projects', label: 'Projects' },
   { id: 'contact', label: 'Contact' },
 ];
+
+function ThemeToggle() {
+  const { setTheme, theme } = useTheme();
+
+  return (
+    <Button
+      variant="outline"
+      size="icon"
+      onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+      aria-label="Toggle theme"
+    >
+      <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+      <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+      <span className="sr-only">Toggle theme</span>
+    </Button>
+  );
+}
 
 export default function Header() {
   const [activeSection, setActiveSection] = useState('home');
@@ -80,6 +98,7 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <NavLinks />
             <div className="hidden md:flex items-center gap-2">
+              <ThemeToggle />
               <Button variant="outline" size="icon" asChild>
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <Github className="h-4 w-4" />
@@ -103,6 +122,7 @@ export default function Header() {
                   <div className="flex flex-col items-center justify-center h-full">
                     <NavLinks isMobile />
                     <div className="mt-8 flex items-center gap-4">
+                       <ThemeToggle />
                        <Button variant="outline" size="icon" asChild>
                          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                            <Github className="h-5 w-5" />
