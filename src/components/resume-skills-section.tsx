@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
+import ResumeViewer from './resume-viewer';
 
 const skills = {
   'AI/ML': ['RAG', 'Vector DBs', 'Fine-Tuning'],
@@ -81,9 +82,9 @@ export default function ResumeSkillsSection() {
             Check out my professional experience and qualifications.
           </p>
           <div className="text-center mt-8 space-x-4">
-            <Button size="lg" asChild>
-              <a href={resumeUrl} target="_blank" rel="noopener noreferrer">View Resume</a>
-            </Button>
+            <ResumeViewer url={resumeUrl}>
+              <Button size="lg">View Resume</Button>
+            </ResumeViewer>
             <Button size="lg" variant="secondary" asChild>
               <a href={downloadUrl} download="Aakash_Bhargava_Resume.pdf">Download Resume</a>
             </Button>

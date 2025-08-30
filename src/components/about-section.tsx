@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+import ResumeViewer from './resume-viewer';
 
 export default function AboutSection() {
   const resumeUrl = 'https://raw.githubusercontent.com/aakashbh1/resume/main/Aakash_Bhargava_Horizontal.pdf';
@@ -30,9 +31,9 @@ export default function AboutSection() {
               </p>
             </div>
              <div className="mt-8 flex gap-4 justify-center md:justify-start">
-               <Button size="lg" asChild>
-                 <a href={resumeUrl} target="_blank" rel="noopener noreferrer">View Resume</a>
-               </Button>
+               <ResumeViewer url={resumeUrl}>
+                  <Button size="lg">View Resume</Button>
+               </ResumeViewer>
               <Button size="lg" variant="secondary" asChild>
                 <a href={downloadUrl} download="Aakash_Bhargava_Resume.pdf">Download Resume</a>
               </Button>

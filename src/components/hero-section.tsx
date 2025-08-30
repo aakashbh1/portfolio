@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin } from 'lucide-react';
+import ResumeViewer from './resume-viewer';
 
 export default function HeroSection() {
   const resumeUrl = 'https://raw.githubusercontent.com/aakashbh1/resume/main/Aakash_Bhargava_Horizontal.pdf';
-  const downloadUrl = 'https://github.com/aakashbh1/resume/raw/main/Aakash_Bhargava_Horizontal.pdf';
 
   return (
     <section id="home" className="relative min-h-dvh flex items-center justify-center text-center px-4 overflow-hidden">
@@ -18,9 +18,9 @@ export default function HeroSection() {
           Software Engineer | Java | Spring Boot | Python | AWS | AI Enthusiast
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <Button size="lg" asChild>
-            <a href={resumeUrl} target="_blank" rel="noopener noreferrer">View Resume</a>
-          </Button>
+          <ResumeViewer url={resumeUrl}>
+            <Button size="lg">View Resume</Button>
+          </ResumeViewer>
           <Button variant="outline" size="icon" className="h-12 w-12" asChild>
             <a href="https://github.com/aakashbh1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Github className="h-6 w-6" />
