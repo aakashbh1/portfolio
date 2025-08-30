@@ -27,7 +27,7 @@ export default function AboutSection() {
               </p>
             </div>
             <Button size="lg" variant="secondary" className="mt-8" asChild>
-              <a href="https://github.com/aakashbh1" download="Aakash_Bhargava_Resume.pdf">Download Resume</a>
+              <a href="https://github.com/aakashbh1/resume/raw/main/Aakash_Bhargava_Horizontal.pdf" download="Aakash_Bhargava_Resume.pdf">Download Resume</a>
             </Button>
           </div>
         </div>
