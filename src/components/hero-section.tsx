@@ -16,7 +16,7 @@ export default function HeroSection() {
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <Button size="lg" asChild>
-            <a href="https://raw.githubusercontent.com/aakashbh1/resume/main/Aakash_Bhargava_Horizontal.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+            <a href="https://github.com/aakashbh1/resume/blob/main/Aakash_Bhargava_Horizontal.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
           </Button>
           <Button variant="outline" size="icon" className="h-12 w-12" asChild>
             <a href="https://github.com/aakashbh1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">

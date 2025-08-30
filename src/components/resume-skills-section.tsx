@@ -79,10 +79,10 @@ export default function ResumeSkillsSection() {
           </p>
           <div className="text-center mt-8 space-x-4">
             <Button size="lg" asChild>
-              <a href="https://raw.githubusercontent.com/aakashbh1/resume/main/Aakash_Bhargava_Horizontal.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+              <a href="https://github.com/aakashbh1/resume/blob/main/Aakash_Bhargava_Horizontal.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
             </Button>
             <Button size="lg" variant="secondary" asChild>
-              <a href="https://github.com/aakashbh1/resume/raw/main/Aakash_Bhargava_Horizontal.pdf" download="Aakash_Bhargava_Resume.pdf">Download Resume</a>
+              <a href="https://raw.githubusercontent.com/aakashbh1/resume/main/Aakash_Bhargava_Horizontal.pdf" download="Aakash_Bhargava_Resume.pdf">Download Resume</a>
             </Button>
           </div>
         </div>
