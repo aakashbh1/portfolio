@@ -52,7 +52,7 @@ export default function ProjectsSection() {
                     <Github className="mr-2 h-4 w-4" /> GitHub
                   </a>
                 </Button>
-                {project.liveDemo &amp;&amp; (
+                {project.liveDemo && (
                   <Button asChild>
                     <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
                       Live Demo

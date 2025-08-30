@@ -54,10 +54,10 @@ export default function Header() {
           asChild
           className={cn(
             'text-foreground/80 hover:text-foreground transition-colors hover:no-underline',
-            activeSection === item.id &amp;&amp; 'text-foreground font-semibold',
-            isMobile &amp;&amp; 'text-lg'
+            activeSection === item.id && 'text-foreground font-semibold',
+            isMobile && 'text-lg'
           )}
-          onClick={() => isMobile &amp;&amp; setIsMobileMenuOpen(false)}
+          onClick={() => isMobile && setIsMobileMenuOpen(false)}
         >
           <Link href={`#${item.id}`}>{item.label}</Link>
         </Button>
