@@ -75,7 +75,7 @@ export default function ResumeSkillsSection() {
       <SkillsMarquee />
 
       <div className="container mx-auto px-4">
-        <separator className="my-16" />
+        <Separator className="my-16" />
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl font-bold font-headline">My Resume</h2>
           <p className="text-muted-foreground mt-2">
