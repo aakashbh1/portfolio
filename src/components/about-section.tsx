@@ -8,7 +8,7 @@ export default function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative w-full max-w-md mx-auto aspect-square rounded-full overflow-hidden shadow-2xl shadow-primary/20">
             <Image
-              src="https://picsum.photos/600/600"
+              src="https://raw.githubusercontent.com/aakashbh1/resume/main/239697909_392463379423409_72035763290440210_n.jpg"
               alt="Aakash Bhargava"
               width={600}
               height={600}
