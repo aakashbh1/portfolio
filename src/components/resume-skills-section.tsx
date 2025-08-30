@@ -3,7 +3,6 @@
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
-import ResumeViewer from './resume-viewer';
 
 const skills = {
   'AI/ML': ['RAG', 'Vector DBs', 'Fine-Tuning'],
@@ -45,7 +44,7 @@ const SkillsMarquee = () => {
       }}
     >
       {/* To change the speed, adjust the duration in the className below (e.g., animate-[marquee_40s_linear_infinite]) */}
-      <div className="flex animate-[marquee_45s_linear_infinite] py-4">
+      <div className="flex animate-[marquee_60s_linear_infinite] py-4">
         {extendedSkills.map((skill, index) => (
           <div key={index} className="mx-4 flex-shrink-0">
             <SkillCard skill={skill} />
@@ -59,7 +58,7 @@ const SkillsMarquee = () => {
 
 export default function ResumeSkillsSection() {
   const resumeUrl = 'https://raw.githubusercontent.com/aakashbh1/resume/main/Aakash_Bhargava_Horizontal.pdf';
-  const downloadUrl = 'https://raw.githubusercontent.com/aakashbh1/resume/main/Aakash_Bhargava_Horizontal.pdf';
+  const downloadUrl = 'https://github.com/aakashbh1/resume/raw/main/Aakash_Bhargava_Horizontal.pdf';
 
   return (
     <section id="resume" className="bg-background">
@@ -82,9 +81,9 @@ export default function ResumeSkillsSection() {
             Check out my professional experience and qualifications.
           </p>
           <div className="text-center mt-8 space-x-4">
-            <ResumeViewer pdfUrl={resumeUrl}>
-              <Button size="lg">View Resume</Button>
-            </ResumeViewer>
+            <Button size="lg" asChild>
+              <a href={resumeUrl} target="_blank" rel="noopener noreferrer">View Resume</a>
+            </Button>
             <Button size="lg" variant="secondary" asChild>
               <a href={downloadUrl} download="Aakash_Bhargava_Resume.pdf">Download Resume</a>
             </Button>
