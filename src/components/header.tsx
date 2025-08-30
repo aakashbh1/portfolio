@@ -100,12 +100,12 @@ export default function Header() {
             <div className="hidden md:flex items-center gap-2">
               <ThemeToggle />
               <Button variant="outline" size="icon" asChild>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <a href="https://github.com/aakashbh1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <Github className="h-4 w-4" />
                 </a>
               </Button>
               <Button variant="outline" size="icon" asChild>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/aakashbh1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <Linkedin className="h-4 w-4" />
                 </a>
               </Button>
@@ -124,12 +124,12 @@ export default function Header() {
                     <div className="mt-8 flex items-center gap-4">
                        <ThemeToggle />
                        <Button variant="outline" size="icon" asChild>
-                         <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                         <a href="https://github.com/aakashbh1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                            <Github className="h-5 w-5" />
                          </a>
                        </Button>
                        <Button variant="outline" size="icon" asChild>
-                         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                         <a href="https://www.linkedin.com/in/aakashbh1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                            <Linkedin className="h-5 w-5" />
                          </a>
                        </Button>

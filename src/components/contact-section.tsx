@@ -121,8 +121,8 @@ export default function ContactSection() {
             </form>
           </Form>
           <div className="mt-12 flex justify-center gap-6">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors"><Github className="h-7 w-7" /><span className="sr-only">GitHub</span></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors"><Linkedin className="h-7 w-7" /><span className="sr-only">LinkedIn</span></a>
+            <a href="https://github.com/aakashbh1" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors"><Github className="h-7 w-7" /><span className="sr-only">GitHub</span></a>
+            <a href="https://www.linkedin.com/in/aakashbh1/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors"><Linkedin className="h-7 w-7" /><span className="sr-only">LinkedIn</span></a>
             <a href="mailto:youremail@example.com" className="text-muted-foreground hover:text-foreground transition-colors"><Mail className="h-7 w-7" /><span className="sr-only">Email</span></a>
           </div>
         </div>
