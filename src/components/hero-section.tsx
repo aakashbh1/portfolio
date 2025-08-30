@@ -11,15 +11,15 @@ export default function HeroSection() {
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold font-headline tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-foreground/80 via-foreground to-foreground/80 dark:from-foreground/80 dark:to-foreground py-4">
           Hi, I’m Aakash Bhargava 👋
         </h1>
-        <p className="mt-4 text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
+        <p className="mt-8 text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
           Software Engineer | Java | Spring Boot | Python | AWS | AI Enthusiast
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <Button size="lg" asChild>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+            <a href="https://github.com/aakashbh1" target="_blank" rel="noopener noreferrer">View Resume</a>
           </Button>
           <Button variant="outline" size="icon" className="h-12 w-12" asChild>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <a href="https://github.com/aakashbh1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Github className="h-6 w-6" />
             </a>
           </Button>
