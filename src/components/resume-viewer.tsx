@@ -23,8 +23,8 @@ export default function ResumeViewer({ children, url }: ResumeViewerProps) {
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent className="max-w-4xl h-[90vh] p-0">
-        <DialogHeader className="p-4 flex flex-row items-center justify-between border-b">
+      <DialogContent className="max-w-4xl h-[90vh] p-0 flex flex-col">
+        <DialogHeader className="p-4 flex flex-row items-center justify-between border-b shrink-0">
           <DialogTitle>My Resume</DialogTitle>
           <DialogClose asChild>
             <Button variant="ghost" size="icon">
@@ -33,7 +33,7 @@ export default function ResumeViewer({ children, url }: ResumeViewerProps) {
             </Button>
           </DialogClose>
         </DialogHeader>
-        <div className="flex-grow h-full">
+        <div className="flex-1 overflow-hidden">
           <iframe
             src={embedUrl}
             className="w-full h-full border-0"
