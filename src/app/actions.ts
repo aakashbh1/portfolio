@@ -33,7 +33,7 @@ export async function sendContactMessage(values: z.infer<typeof contactSchema>) 
   const mailOptions = {
     from: `"Portfolio Contact Form" <${process.env.EMAIL_SERVER_USER}>`,
     to: process.env.EMAIL_TO,
-    subject: `New message from ${name}`,
+    subject: `New message from ${name} via Portfolio Website`,
     replyTo: email,
     text: message,
     html: `
