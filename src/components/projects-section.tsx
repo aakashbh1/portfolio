@@ -11,12 +11,6 @@ import { Github } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Startup Idea Validator',
-    description: 'An AI-powered tool to validate startup ideas by providing feedback and market analysis.',
-    github: 'https://github.com/aakashbh1/startup-idea-validator',
-    liveDemo: null,
-  },
-  {
     title: 'Hiyerd (AI Interview Platform)',
     description: 'AI-powered web platform to simulate job interviews with real-time voice interaction and detailed performance analytics.',
     github: 'https://github.com/aakashbh1/Hiyerd',
@@ -27,6 +21,12 @@ const projects = [
     description: 'A full-fledged MERN stack EdTech platform with course purchasing, progress tracking, and real-time chat.',
     github: 'https://github.com/aakashbh1/Learnify',
     liveDemo: 'https://learnifyedtech.vercel.app/',
+  },
+  {
+    title: 'Startup Idea Validator',
+    description: 'An AI-powered tool to validate startup ideas by providing feedback and market analysis.',
+    github: 'https://github.com/aakashbh1/startup-idea-validator',
+    liveDemo: 'https://startup-idea-validator.vercel.app/',
   },
 ];
 
