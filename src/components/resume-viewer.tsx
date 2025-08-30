@@ -26,12 +26,6 @@ export default function ResumeViewer({ children, url }: ResumeViewerProps) {
       <DialogContent className="max-w-4xl h-[90vh] p-0 flex flex-col">
         <DialogHeader className="p-4 flex flex-row items-center justify-between border-b shrink-0">
           <DialogTitle>My Resume</DialogTitle>
-          <DialogClose asChild>
-            <Button variant="ghost" size="icon">
-              <X className="h-4 w-4" />
-              <span className="sr-only">Close</span>
-            </Button>
-          </DialogClose>
         </DialogHeader>
         <div className="flex-1 overflow-hidden">
           <iframe
