@@ -49,7 +49,7 @@ export default function ResumeSkillsSection() {
               <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
             </Button>
             <Button size="lg" variant="secondary" asChild>
-              <a href="/resume.pdf" download="Akash_Vargas_Resume.pdf">Download Resume</a>
+              <a href="/resume.pdf" download="Aakash_Bhargava_Resume.pdf">Download Resume</a>
             </Button>
           </div>
         </div>

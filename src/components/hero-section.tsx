@@ -8,8 +8,8 @@ export default function HeroSection() {
       <div className="absolute inset-0 -z-10 h-full w-full bg-background bg-[radial-gradient(#2563eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
       
       <div className="z-10">
-        <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold font-headline tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-foreground/80 to-foreground">
-          Hi, I’m Akash Vargas 👋
+        <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold font-headline tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-foreground/80 via-foreground to-foreground/80 dark:from-foreground/80 dark:to-foreground">
+          Hi, I’m Aakash Bhargava 👋
         </h1>
         <p className="mt-4 text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
           Software Engineer | Java | Spring Boot | Python | AWS | AI Enthusiast

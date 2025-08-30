@@ -1,6 +1,7 @@
 'use server';
 
 import { z } from 'zod';
+import nodemailer from 'nodemailer';
 
 const contactSchema = z.object({
   name: z.string(),
@@ -15,16 +16,39 @@ export async function sendContactMessage(values: z.infer<typeof contactSchema>) 
     return { success: false, error: 'Invalid input.' };
   }
 
-  // Simulate sending an email. In a real application, you would
-  // integrate an email service like Resend, SendGrid, or Nodemailer here.
-  console.log('New contact message received:');
-  console.log('Name:', parsed.data.name);
-  console.log('Email:', parsed.data.email);
-  console.log('Message:', parsed.data.message);
+  const { name, email, message } = parsed.data;
 
-  // Simulate a network delay
-  await new Promise(resolve => setTimeout(resolve, 1000));
-  
-  // Always return success for this simulation
-  return { success: true };
+  // Create a transporter object using the default SMTP transport
+  // You need to set up your environment variables for this to work.
+  const transporter = nodemailer.createTransport({
+    host: process.env.EMAIL_SERVER_HOST,
+    port: parseInt(process.env.EMAIL_SERVER_PORT || '587', 10),
+    secure: process.env.EMAIL_SERVER_PORT === '465', // true for 465, false for other ports
+    auth: {
+      user: process.env.EMAIL_SERVER_USER,
+      pass: process.env.EMAIL_SERVER_PASS,
+    },
+  });
+
+  const mailOptions = {
+    from: `"${name}" <${email}>`,
+    to: process.env.EMAIL_TO,
+    subject: `New message from ${name} via your portfolio`,
+    text: message,
+    html: `
+      <h1>New Message from Portfolio Contact Form</h1>
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Message:</strong></p>
+      <p>${message.replace(/\n/g, '<br>')}</p>
+    `,
+  };
+
+  try {
+    await transporter.sendMail(mailOptions);
+    return { success: true };
+  } catch (error) {
+    console.error('Failed to send email:', error);
+    return { success: false, error: 'Failed to send message. Please try again later.' };
+  }
 }
