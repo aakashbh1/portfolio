@@ -83,3 +83,14 @@
     @apply bg-accent text-accent-foreground px-1 rounded;
   }
 }
+
+@layer utilities {
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
