@@ -9,7 +9,7 @@ export default function HeroSection() {
       
       <div className="z-10">
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold font-headline tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
-          Hi, I’m Akash Vargas 👋
+          Hi, I’m Aakash Bhargava 👋
         </h1>
         <p className="mt-4 text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
           Software Engineer | Java | Spring Boot | Python | AWS | AI Enthusiast

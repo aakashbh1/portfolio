@@ -11,22 +11,22 @@ import { Github } from 'lucide-react';
 
 const projects = [
   {
-    title: 'AI-Powered Chat Assistant',
-    description: 'Built an AI chatbot using Python and OpenAI APIs, deployed on AWS Lambda with a serverless architecture.',
-    github: 'https://github.com',
+    title: 'Startup Idea Validator',
+    description: 'An AI-powered tool to validate startup ideas by providing feedback and market analysis.',
+    github: 'https://github.com/aakashbh1/startup-idea-validator',
     liveDemo: null,
   },
   {
-    title: 'Task Manager App',
-    description: 'Full-stack task manager built with Spring Boot backend and a responsive React frontend for seamless user experience.',
-    github: 'https://github.com',
-    liveDemo: 'https://example.com',
+    title: 'Hiyerd (AI Interview Platform)',
+    description: 'AI-powered web platform to simulate job interviews with real-time voice interaction and detailed performance analytics.',
+    github: 'https://github.com/aakashbh1/Hiyerd',
+    liveDemo: 'https://hiyerd.vercel.app/',
   },
   {
-    title: 'Portfolio Pro Website',
-    description: 'This personal portfolio site, built with Next.js and Tailwind CSS, showcasing my work, skills, and professional journey.',
-    github: 'https://github.com',
-    liveDemo: '#',
+    title: 'Learnify (Ed Tech Platform)',
+    description: 'A full-fledged MERN stack EdTech platform with course purchasing, progress tracking, and real-time chat.',
+    github: 'https://github.com/aakashbh1/Learnify',
+    liveDemo: 'https://learnifyedtech.vercel.app/',
   },
 ];
 

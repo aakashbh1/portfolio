@@ -9,7 +9,7 @@ export default function AboutSection() {
           <div className="relative w-full max-w-md mx-auto aspect-square rounded-full overflow-hidden shadow-2xl shadow-primary/20">
             <Image
               src="https://picsum.photos/600/600"
-              alt="Akash Vargas"
+              alt="Aakash Bhargava"
               width={600}
               height={600}
               className="object-cover"
