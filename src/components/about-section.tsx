@@ -9,7 +9,7 @@ export default function AboutSection() {
           <div className="relative w-full max-w-md mx-auto aspect-square rounded-full overflow-hidden shadow-2xl shadow-primary/20">
             <Image
               src="https://picsum.photos/600/600"
-              alt="John Doe"
+              alt="Akash Vargas"
               width={600}
               height={600}
               className="object-cover"
@@ -27,7 +27,7 @@ export default function AboutSection() {
               </p>
             </div>
             <Button size="lg" variant="secondary" className="mt-8" asChild>
-              <a href="/resume.pdf" download="John_Doe_Resume.pdf">Download Resume</a>
+              <a href="/resume.pdf" download="Akash_Vargas_Resume.pdf">Download Resume</a>
             </Button>
           </div>
         </div>

@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="py-6 border-t border-border/20">
       <div className="container mx-auto px-4 text-center text-muted-foreground">
-        <p>&copy; {currentYear} John Doe. All Rights Reserved.</p>
+        <p>&copy; {currentYear} Akash Vargas. All Rights Reserved.</p>
       </div>
     </footer>
   );
