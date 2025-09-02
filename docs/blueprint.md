@@ -1,4 +1,4 @@
-# **App Name**: Portfolio Pro
+# **App Name**: Aakash Bhargava
 
 ## Core Features:
 

@@ -6,7 +6,7 @@ import { Toaster } from "@/components/ui/toaster"
 import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
-  title: 'Portfolio Pro',
+  title: 'Aakash Bhargava',
   description: 'A professional and modern portfolio to showcase skills and projects.',
 };
 
