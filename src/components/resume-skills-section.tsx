@@ -58,9 +58,6 @@ const SkillsMarquee = () => {
 
 
 export default function ResumeSkillsSection() {
-  const resumeUrl = 'https://raw.githubusercontent.com/aakashbh1/resume/main/Aakash_Bhargava_Horizontal.pdf';
-  const downloadUrl = 'https://github.com/aakashbh1/resume/raw/main/Aakash_Bhargava_Horizontal.pdf';
-
   return (
     <section id="resume" className="bg-background">
       <div className="container mx-auto px-4">
@@ -74,23 +71,6 @@ export default function ResumeSkillsSection() {
 
       <SkillsMarquee />
 
-      <div className="container mx-auto px-4">
-        <Separator className="my-16" />
-        <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold font-headline">My Resume</h2>
-          <p className="text-muted-foreground mt-2">
-            Check out my professional experience and qualifications.
-          </p>
-          <div className="text-center mt-8 space-x-4">
-            <ResumeViewer url={resumeUrl}>
-              <Button size="lg">View Resume</Button>
-            </ResumeViewer>
-            <Button size="lg" variant="secondary" asChild>
-              <a href={downloadUrl} download="Aakash_Bhargava_Resume.pdf">Download Resume</a>
-            </Button>
-          </div>
-        </div>
-      </div>
     </section>
   );
 }
