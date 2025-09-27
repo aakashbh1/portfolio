@@ -43,7 +43,7 @@ export default function ProjectsSection() {
             <Card key={index} className="flex flex-col bg-card hover:border-primary transition-all duration-300 transform hover:-translate-y-2">
               <CardHeader>
                 <CardTitle className="font-headline">{project.title}</CardTitle>
-                <CardDescription className="pt-2 h-20">{project.description}</CardDescription>
+                <CardDescription className="pt-2 min-h-[6rem]">{project.description}</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow"></CardContent>
               <CardFooter className="flex justify-start gap-4">

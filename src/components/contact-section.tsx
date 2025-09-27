@@ -60,7 +60,7 @@ export default function ContactSection() {
   }
 
   return (
-    <section id="contact" className="bg-card">
+    <section id="contact" className="w-full">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold font-headline">Let’s Connect</h2>
@@ -123,7 +123,7 @@ export default function ContactSection() {
           <div className="mt-12 flex justify-center gap-6">
             <a href="https://github.com/aakashbh1" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors"><Github className="h-7 w-7" /><span className="sr-only">GitHub</span></a>
             <a href="https://www.linkedin.com/in/aakashbh1/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors"><Linkedin className="h-7 w-7" /><span className="sr-only">LinkedIn</span></a>
-            <a href="mailto:youremail@example.com" className="text-muted-foreground hover:text-foreground transition-colors"><Mail className="h-7 w-7" /><span className="sr-only">Email</span></a>
+            <a href="mailto:aakashbhargava31@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors"><Mail className="h-7 w-7" /><span className="sr-only">Email</span></a>
           </div>
         </div>
       </div>

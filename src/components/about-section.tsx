@@ -9,19 +9,20 @@ export default function AboutSection() {
   return (
     <section id="about" className="bg-card">
       <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold font-headline">About Me</h2>
+        </div>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative w-full max-w-md mx-auto aspect-square rounded-full overflow-hidden shadow-2xl shadow-primary/20">
             <Image
               src="https://raw.githubusercontent.com/aakashbh1/resume/main/239697909_392463379423409_72035763290440210_n.jpg"
               alt="Aakash Bhargava"
-              width={600}
-              height={600}
+              fill
               className="object-cover"
               data-ai-hint="professional portrait"
             />
           </div>
           <div className="text-center md:text-left">
-            <h2 className="text-3xl sm:text-4xl font-bold font-headline mb-4">About Me</h2>
             <div className="space-y-4 text-muted-foreground text-base md:text-lg">
               <p>
                 I am a passionate Software Engineer with experience in building scalable applications and services using Java (Spring Boot), Python, and cloud technologies like AWS.
