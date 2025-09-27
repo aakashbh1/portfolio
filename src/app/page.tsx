@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, User, Briefcase } from 'lucide-react';
+import { ArrowRight, User, Briefcase, Code, Eye } from 'lucide-react';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 
 export default function Home() {
   return (
@@ -30,6 +31,55 @@ export default function Home() {
                   <User className="mr-2" /> Know Me Beyond Work
                 </Link>
               </Button>
+            </div>
+          </div>
+        </section>
+
+        <section id="snapshot" className="py-16 sm:py-24 bg-card">
+          <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-2 gap-8">
+              <Card className="border-primary/20 hover:border-primary transition-all">
+                <CardHeader>
+                  <CardTitle className="font-headline flex items-center gap-3">
+                    <Code className="h-8 w-8 text-primary" />
+                    Professional Snapshot
+                  </CardTitle>
+                  <CardDescription>A glimpse into my technical world.</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">
+                    As a Software Engineer, I specialize in building scalable applications and services, with a deep curiosity for AI and its potential to transform businesses.
+                  </p>
+                </CardContent>
+                <CardFooter>
+                  <Button asChild variant="link" className="p-0 h-auto">
+                    <Link href="/professional">
+                      See more <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+              <Card className="border-primary/20 hover:border-primary transition-all">
+                <CardHeader>
+                  <CardTitle className="font-headline flex items-center gap-3">
+                    <Eye className="h-8 w-8 text-primary" />
+                    Beyond Work
+                  </CardTitle>
+                  <CardDescription>Who I am outside of the code.</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">
+                    I'm a curious mind who enjoys exploring AI trends, creating content, reading, and unwinding with strategy games.
+                  </p>
+                </CardContent>
+                <CardFooter>
+                   <Button asChild variant="link" className="p-0 h-auto">
+                    <Link href="/beyond-work">
+                      See more <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardFooter>
+              </Card>
             </div>
           </div>
         </section>
