@@ -1,13 +1,14 @@
 import Header from '@/components/header';
 import Footer from '@/components/footer';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Twitter, Instagram, Youtube, BookOpen, BrainCircuit, Gamepad2, Guitar, Pencil } from 'lucide-react';
-import Image from 'next/image';
+import { Twitter, Instagram, Youtube, BookOpen, BrainCircuit, Gamepad2, Linkedin, Sparkles } from 'lucide-react';
 
 const socialLinks = [
-    { name: 'Twitter / X', icon: Twitter, url: 'https://twitter.com/aakashbh1' },
+    { name: 'Threads', icon: () => <span className="font-bold text-xl">@</span>, url: 'https://www.threads.net/@aakash.b_' },
+    { name: 'X / Twitter', icon: Twitter, url: 'https://twitter.com/aakashbh1' },
     { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/aakash.b_/' },
+    { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/aakashbh1/' },
     { name: 'YouTube', icon: Youtube, url: 'https://www.youtube.com/channel/UC-qr_eEZ5h1D6G-h-a5g_sw' },
 ]
 
@@ -15,12 +16,6 @@ const hobbies = [
     { name: 'Reading', icon: BookOpen, description: 'Exploring new worlds through books, from sci-fi to non-fiction.'},
     { name: 'AI Exploration', icon: BrainCircuit, description: 'Diving deep into the latest AI trends and building fun projects.'},
     { name: 'Gaming', icon: Gamepad2, description: 'Unwinding with strategy games and immersive RPGs.'},
-]
-
-const currentFocus = [
-    { name: 'Fine-Tuning LLMs', icon: BrainCircuit, description: 'Learning how to fine-tune models and build agents that can perform complex tasks.'},
-    { name: 'Creative Writing', icon: Pencil, description: 'Exploring storytelling and improving my writing skills.'},
-    { name: 'Learning Guitar', icon: Guitar, description: 'Strumming my way through the basics of the acoustic guitar.'},
 ]
 
 export default function BeyondWorkPage() {
@@ -39,22 +34,26 @@ export default function BeyondWorkPage() {
           <div className="grid md:grid-cols-2 gap-12 items-start">
             
             <div className="space-y-12">
-                 <Card>
+                <Card>
                     <CardHeader>
-                        <CardTitle>Current Focus</CardTitle>
+                        <CardTitle className="font-headline flex items-center gap-3">
+                            <Sparkles className="h-8 w-8 text-primary" />
+                            Currently Building: SLLAIGHT
+                        </CardTitle>
+                        <CardDescription>An AI-driven automation agency I'm founding.</CardDescription>
                     </CardHeader>
-                     <CardContent className="space-y-6">
-                       {currentFocus.map(focus => (
-                           <div key={focus.name} className="flex items-start gap-4">
-                               <div className="bg-primary/10 text-primary p-3 rounded-full">
-                                <focus.icon className="h-6 w-6" />
-                               </div>
-                               <div>
-                                   <h3 className="font-semibold text-lg">{focus.name}</h3>
-                                   <p className="text-muted-foreground">{focus.description}</p>
-                               </div>
-                           </div>
-                       ))}
+                     <CardContent className="space-y-4 text-muted-foreground">
+                       <p>
+                        SLLAIGHT (Systems Leveraging Logic and Artificial Intelligence for Generating Hyperautomation Tools) is an AI-driven automation agency focused on building intelligent systems, SaaS tools, and solutions for businesses. Our mission is to help companies save time, optimize operations, and scale efficiently by leveraging cutting-edge AI technologies.
+                       </p>
+                       <p>
+                        From custom AI automation tools to intelligent workflow systems, SLLAIGHT empowers businesses to streamline processes, reduce manual effort, and make smarter data-driven decisions.
+                       </p>
+                       <Button asChild>
+                            <a href="https://www.sllaight.com" target="_blank" rel="noopener noreferrer">
+                                Learn More
+                            </a>
+                        </Button>
                     </CardContent>
                 </Card>
 
@@ -79,23 +78,6 @@ export default function BeyondWorkPage() {
             </div>
             
             <div className="space-y-12">
-                <Card>
-                    <CardHeader>
-                        <CardTitle>Latest on YouTube</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <div className="aspect-video rounded-lg overflow-hidden border">
-                             <iframe 
-                                className="w-full h-full"
-                                src="https://www.youtube.com/embed/videoseries?list=UU-qr_eEZ5h1D6G-h-a5g_sw" 
-                                title="YouTube video player" 
-                                frameBorder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowFullScreen>
-                             </iframe>
-                        </div>
-                    </CardContent>
-                </Card>
                 <Card>
                     <CardHeader>
                         <CardTitle>Connect with Me</CardTitle>

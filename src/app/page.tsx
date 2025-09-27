@@ -87,26 +87,26 @@ export default function Home() {
         <section id="currently-working-on" className="py-16 sm:py-24">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl sm:text-4xl font-bold font-headline">Currently Working On</h2>
+                    <h2 className="text-3xl sm:text-4xl font-bold font-headline">Currently Building & Founding</h2>
                 </div>
                 <Card className="max-w-4xl mx-auto border-primary/20 hover:border-primary transition-all">
                     <CardHeader>
                          <CardTitle className="font-headline flex items-center gap-3">
                             <Sparkles className="h-8 w-8 text-primary" />
-                            Hiyerd: An AI Interview Platform
+                            SLLAIGHT
                         </CardTitle>
-                        <CardDescription>A key project I'm developing to help job seekers practice for interviews.</CardDescription>
+                        <CardDescription>An AI-driven automation agency focused on building intelligent systems, SaaS tools, and solutions for businesses.</CardDescription>
                     </CardHeader>
                     <CardContent>
                         <p className="text-muted-foreground">
-                            I'm building an AI-powered platform that simulates job interviews, providing real-time voice interaction and detailed performance feedback. It's a challenging project that combines my interests in software engineering and artificial intelligence.
+                           SLLAIGHT (Systems Leveraging Logic and Artificial Intelligence for Generating Hyperautomation Tools) is dedicated to helping companies save time, optimize operations, and scale efficiently by leveraging cutting-edge AI technologies.
                         </p>
                     </CardContent>
                     <CardFooter>
                         <Button asChild>
-                            <Link href="/professional#projects">
-                                Learn More
-                            </Link>
+                            <a href="https://www.sllaight.com" target="_blank" rel="noopener noreferrer">
+                                Visit SLLAIGHT
+                            </a>
                         </Button>
                     </CardFooter>
                 </Card>
