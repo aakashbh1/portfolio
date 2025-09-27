@@ -6,10 +6,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-  DialogClose,
 } from '@/components/ui/dialog';
-import { Button } from '@/components/ui/button';
-import { X } from 'lucide-react';
 
 interface ResumeViewerProps {
   children: React.ReactNode;
@@ -24,7 +21,7 @@ export default function ResumeViewer({ children, url }: ResumeViewerProps) {
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent className="max-w-4xl h-[90vh] p-0 flex flex-col">
-        <DialogHeader className="p-4 flex flex-row items-center justify-between border-b shrink-0">
+        <DialogHeader className="p-4 border-b shrink-0">
           <DialogTitle>My Resume</DialogTitle>
         </DialogHeader>
         <div className="flex-1 overflow-hidden">

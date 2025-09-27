@@ -23,7 +23,7 @@ export default function Home() {
             <div className="mt-12 flex flex-col sm:flex-row justify-center items-center gap-6">
               <Button size="lg" asChild className="w-full sm:w-auto">
                 <Link href="/professional">
-                  <Briefcase className="mr-2" /> Explore My Work
+                  <Briefcase className="mr-2" /> Professional Journey
                 </Link>
               </Button>
               <Button size="lg" variant="secondary" asChild className="w-full sm:w-auto">
