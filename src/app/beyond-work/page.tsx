@@ -2,7 +2,7 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Twitter, Instagram, Youtube, BookOpen, BrainCircuit, Gamepad2, Linkedin, Sparkles } from 'lucide-react';
+import { Twitter, Instagram, Youtube, BookOpen, BrainCircuit, Linkedin, Sparkles, Music, Dumbbell } from 'lucide-react';
 
 const socialLinks = [
     { name: 'Threads', icon: () => <span className="font-bold text-xl">@</span>, url: 'https://www.threads.com/@aakash.bhargavaa' },
@@ -15,7 +15,8 @@ const socialLinks = [
 const hobbies = [
     { name: 'Reading', icon: BookOpen, description: 'Exploring new worlds through books, from sci-fi to non-fiction.'},
     { name: 'AI Exploration', icon: BrainCircuit, description: 'Diving deep into the latest AI trends and building fun projects.'},
-    { name: 'Gaming', icon: Gamepad2, description: 'Unwinding with strategy games and immersive RPGs.'},
+    { name: 'Music', icon: Music, description: 'Listening to a wide variety of music and learning to play the guitar.'},
+    { name: 'Fitness', icon: Dumbbell, description: 'Staying active with running, gym sessions, and mobility work.' },
 ]
 
 export default function BeyondWorkPage() {

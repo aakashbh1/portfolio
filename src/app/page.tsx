@@ -69,7 +69,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    I'm a curious mind who enjoys exploring AI trends, creating content, reading, and unwinding with strategy games.
+                    I'm a curious mind who enjoys exploring AI trends, creating content, reading, and diving into self-development and productivity.
                   </p>
                 </CardContent>
                 <CardFooter>
