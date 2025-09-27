@@ -13,7 +13,7 @@ const socialLinks = [
 ]
 
 const hobbies = [
-    { name: 'Reading', icon: BookOpen, description: 'Exploring new worlds through books, from sci-fi to non-fiction.'},
+    { name: 'Reading', icon: BookOpen, description: 'I mainly read books about self-development, finance, business, and science.'},
     { name: 'AI Exploration', icon: BrainCircuit, description: 'Diving deep into the latest AI trends and building fun projects.'},
     { name: 'Music', icon: Music, description: 'Listening to a wide variety of music and learning to play the guitar.'},
     { name: 'Fitness', icon: Dumbbell, description: 'Staying active with running, gym sessions, and mobility work.' },
