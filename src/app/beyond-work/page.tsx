@@ -2,7 +2,7 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Twitter, Instagram, Youtube, BookOpen, BrainCircuit, Gamepad2 } from 'lucide-react';
+import { Twitter, Instagram, Youtube, BookOpen, BrainCircuit, Gamepad2, Guitar, Pencil } from 'lucide-react';
 import Image from 'next/image';
 
 const socialLinks = [
@@ -15,6 +15,12 @@ const hobbies = [
     { name: 'Reading', icon: BookOpen, description: 'Exploring new worlds through books, from sci-fi to non-fiction.'},
     { name: 'AI Exploration', icon: BrainCircuit, description: 'Diving deep into the latest AI trends and building fun projects.'},
     { name: 'Gaming', icon: Gamepad2, description: 'Unwinding with strategy games and immersive RPGs.'},
+]
+
+const currentFocus = [
+    { name: 'Fine-Tuning LLMs', icon: BrainCircuit, description: 'Learning how to fine-tune models and build agents that can perform complex tasks.'},
+    { name: 'Creative Writing', icon: Pencil, description: 'Exploring storytelling and improving my writing skills.'},
+    { name: 'Learning Guitar', icon: Guitar, description: 'Strumming my way through the basics of the acoustic guitar.'},
 ]
 
 export default function BeyondWorkPage() {
@@ -33,13 +39,22 @@ export default function BeyondWorkPage() {
           <div className="grid md:grid-cols-2 gap-12 items-start">
             
             <div className="space-y-12">
-                <Card>
+                 <Card>
                     <CardHeader>
-                        <CardTitle>Currently...</CardTitle>
+                        <CardTitle>Current Focus</CardTitle>
                     </CardHeader>
-                    <CardContent className="space-y-4 text-muted-foreground">
-                        <p>I'm currently fascinated by the world of Large Language Models and their real-world applications. I'm spending my free time learning how to fine-tune models and build agents that can perform complex tasks.</p>
-                        <p>I'm also exploring creative writing and learning how to play the guitar!</p>
+                     <CardContent className="space-y-6">
+                       {currentFocus.map(focus => (
+                           <div key={focus.name} className="flex items-start gap-4">
+                               <div className="bg-primary/10 text-primary p-3 rounded-full">
+                                <focus.icon className="h-6 w-6" />
+                               </div>
+                               <div>
+                                   <h3 className="font-semibold text-lg">{focus.name}</h3>
+                                   <p className="text-muted-foreground">{focus.description}</p>
+                               </div>
+                           </div>
+                       ))}
                     </CardContent>
                 </Card>
 
