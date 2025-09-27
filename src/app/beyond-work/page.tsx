@@ -5,11 +5,11 @@ import { Button } from '@/components/ui/button';
 import { Twitter, Instagram, Youtube, BookOpen, BrainCircuit, Gamepad2, Linkedin, Sparkles } from 'lucide-react';
 
 const socialLinks = [
-    { name: 'Threads', icon: () => <span className="font-bold text-xl">@</span>, url: 'https://www.threads.net/@aakash.b_' },
-    { name: 'X / Twitter', icon: Twitter, url: 'https://twitter.com/aakashbh1' },
-    { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/aakash.b_/' },
+    { name: 'Threads', icon: () => <span className="font-bold text-xl">@</span>, url: 'https://www.threads.com/@aakash.bhargavaa' },
+    { name: 'X / Twitter', icon: Twitter, url: 'https://x.com/aakashbhargavaa' },
+    { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/aakash.bhargavaa/' },
     { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/aakashbh1/' },
-    { name: 'YouTube', icon: Youtube, url: 'https://www.youtube.com/channel/UC-qr_eEZ5h1D6G-h-a5g_sw' },
+    { name: 'YouTube', icon: Youtube, url: 'https://www.youtube.com/@aakash.bhargava' },
 ]
 
 const hobbies = [
@@ -50,7 +50,7 @@ export default function BeyondWorkPage() {
                         From custom AI automation tools to intelligent workflow systems, SLLAIGHT empowers businesses to streamline processes, reduce manual effort, and make smarter data-driven decisions.
                        </p>
                        <Button asChild>
-                            <a href="https://www.sllaight.com" target="_blank" rel="noopener noreferrer">
+                            <a href="http://www.sllaight.com" target="_blank" rel="noopener noreferrer">
                                 Learn More
                             </a>
                         </Button>

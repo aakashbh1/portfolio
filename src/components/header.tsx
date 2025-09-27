@@ -88,16 +88,6 @@ export default function Header() {
             <NavLinks />
             <div className="hidden md:flex items-center gap-1">
               <ThemeToggle />
-              <Button variant="ghost" size="icon" asChild>
-                <a href="https://github.com/aakashbh1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                  <Github className="h-5 w-5" />
-                </a>
-              </Button>
-              <Button variant="ghost" size="icon" asChild>
-                <a href="https://www.linkedin.com/in/aakashbh1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                  <Linkedin className="h-5 w-5" />
-                </a>
-              </Button>
             </div>
             <div className="md:hidden flex items-center">
               <ThemeToggle />
