@@ -102,7 +102,6 @@ export default function BeyondWorkPage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold font-headline">My Newsletter</h2>
-              <p className="text-muted-foreground mt-2">A newsletter for people curious about self-development, habits, and growth experiments—told from the perspective of a fellow learner.</p>
             </div>
             <div className="max-w-2xl mx-auto">
                <iframe 
