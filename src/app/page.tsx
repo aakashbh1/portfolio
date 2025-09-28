@@ -104,7 +104,7 @@ export default function Home() {
                     </CardContent>
                     <CardFooter>
                         <Button asChild>
-                            <a href="https://www.sllaight.com" target="_blank" rel="noopener noreferrer">
+                            <a href="http://www.sllaight.com" target="_blank" rel="noopener noreferrer">
                                 Visit SLLAIGHT
                             </a>
                         </Button>
@@ -112,6 +112,25 @@ export default function Home() {
                 </Card>
             </div>
         </section>
+
+         <section id="newsletter" className="py-16 sm:py-24 bg-card">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl font-bold font-headline">My Newsletter</h2>
+              <p className="text-muted-foreground mt-2">Subscribe to get my latest thoughts on AI, tech, and productivity.</p>
+            </div>
+            <div className="max-w-2xl mx-auto">
+               <iframe 
+                  src="https://aakashbhargava.substack.com/embed" 
+                  className="w-full h-80 bg-white rounded-md"
+                  style={{border: "1px solid #EEE"}}
+                  frameBorder="0" 
+                  scrolling="no">
+              </iframe>
+            </div>
+          </div>
+        </section>
+
       </main>
       <Footer />
     </div>
