@@ -97,6 +97,23 @@ export default function BeyondWorkPage() {
             </div>
           </div>
         </section>
+
+        <section id="newsletter" className="py-16 sm:py-24 bg-card">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl font-bold font-headline">My Newsletter</h2>
+            </div>
+            <div className="max-w-2xl mx-auto">
+               <iframe 
+                  src="https://aakashbhargava.substack.com/embed" 
+                  className="w-full h-80 bg-white rounded-md"
+                  style={{border: "1px solid #EEE"}}
+                  frameBorder="0" 
+                  scrolling="no">
+              </iframe>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>

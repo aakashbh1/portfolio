@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Github, Linkedin, Menu, Mail, Moon, Sun, Code, User, Home as HomeIcon, MessageSquare } from 'lucide-react';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
+import { Menu, Moon, Sun, Code, User, Home as HomeIcon, MessageSquare } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useTheme } from 'next-themes';
 
@@ -99,25 +99,11 @@ export default function Header() {
                   </Button>
                 </SheetTrigger>
                 <SheetContent side="right">
+                    <SheetHeader>
+                        <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+                    </SheetHeader>
                   <div className="flex flex-col items-center justify-center h-full">
                     <NavLinks isMobile />
-                    <div className="mt-8 flex items-center gap-4">
-                       <Button variant="outline" size="icon" asChild>
-                         <a href="https://github.com/aakashbh1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                           <Github className="h-5 w-5" />
-                         </a>
-                       </Button>
-                       <Button variant="outline" size="icon" asChild>
-                         <a href="https://www.linkedin.com/in/aakashbh1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                           <Linkedin className="h-5 w-5" />
-                         </a>
-                       </Button>
-                       <Button variant="outline" size="icon" asChild>
-                         <a href="mailto:aakashbhargava31@gmail.com" aria-label="Email">
-                           <Mail className="h-5 w-5" />
-                         </a>
-                       </Button>
-                     </div>
                   </div>
                 </SheetContent>
               </Sheet>
