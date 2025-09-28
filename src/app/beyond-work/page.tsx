@@ -79,6 +79,21 @@ export default function BeyondWorkPage() {
             </div>
             
             <div className="space-y-12">
+                 <Card>
+                    <CardHeader>
+                        <CardTitle>My Newsletter</CardTitle>
+                        <CardDescription>Subscribe to get my latest thoughts on AI, tech, and productivity.</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                         <iframe 
+                            src="https://aakashbhargava.substack.com/embed" 
+                            className="w-full h-80 bg-white rounded-md"
+                            style={{border: "1px solid #EEE"}}
+                            frameBorder="0" 
+                            scrolling="no">
+                        </iframe>
+                    </CardContent>
+                </Card>
                 <Card>
                     <CardHeader>
                         <CardTitle>Connect with Me</CardTitle>
