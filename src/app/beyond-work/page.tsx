@@ -1,8 +1,8 @@
 import Header from '@/components/header';
 import Footer from '@/components/footer';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Twitter, Instagram, Youtube, BookOpen, BrainCircuit, Linkedin, Sparkles, Music, Dumbbell } from 'lucide-react';
+import { Twitter, Instagram, Youtube, BookOpen, BrainCircuit, Linkedin, Music, Dumbbell } from 'lucide-react';
 
 const socialLinks = [
     { name: 'Threads', icon: () => <span className="font-bold text-xl">@</span>, url: 'https://www.threads.com/@aakash.bhargavaa' },
@@ -33,68 +33,40 @@ export default function BeyondWorkPage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-start">
+            <Card>
+                <CardHeader>
+                    <CardTitle>Hobbies & Interests</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                    {hobbies.map(hobby => (
+                        <div key={hobby.name} className="flex items-start gap-4">
+                            <div className="bg-primary/10 text-primary p-3 rounded-full">
+                            <hobby.icon className="h-6 w-6" />
+                            </div>
+                            <div>
+                                <h3 className="font-semibold text-lg">{hobby.name}</h3>
+                                <p className="text-muted-foreground">{hobby.description}</p>
+                            </div>
+                        </div>
+                    ))}
+                </CardContent>
+            </Card>
             
-            <div className="space-y-12">
-                <Card>
-                    <CardHeader>
-                        <CardTitle className="font-headline flex items-center gap-3">
-                            <Sparkles className="h-8 w-8 text-primary" />
-                            Currently Building: SLLAIGHT
-                        </CardTitle>
-                        <CardDescription>An AI-driven automation agency I'm founding.</CardDescription>
-                    </CardHeader>
-                     <CardContent className="space-y-4 text-muted-foreground">
-                       <p>
-                        SLLAIGHT (Systems Leveraging Logic and Artificial Intelligence for Generating Hyperautomation Tools) is an AI-driven automation agency focused on building intelligent systems, SaaS tools, and solutions for businesses. Our mission is to help companies save time, optimize operations, and scale efficiently by leveraging cutting-edge AI technologies.
-                       </p>
-                       <p>
-                        From custom AI automation tools to intelligent workflow systems, SLLAIGHT empowers businesses to streamline processes, reduce manual effort, and make smarter data-driven decisions.
-                       </p>
-                       <Button asChild>
-                            <a href="http://www.sllaight.com" target="_blank" rel="noopener noreferrer">
-                                Learn More
+            <Card>
+                <CardHeader>
+                    <CardTitle>Connect with Me</CardTitle>
+                </CardHeader>
+                <CardContent className="flex flex-col space-y-4">
+                    {socialLinks.map(link => (
+                        <Button key={link.name} variant="outline" asChild className="justify-start">
+                            <a href={link.url} target="_blank" rel="noopener noreferrer">
+                                <link.icon className="mr-3 h-5 w-5" />
+                                {link.name}
                             </a>
                         </Button>
-                    </CardContent>
-                </Card>
-
-                 <Card>
-                    <CardHeader>
-                        <CardTitle>Hobbies & Interests</CardTitle>
-                    </CardHeader>
-                    <CardContent className="space-y-6">
-                       {hobbies.map(hobby => (
-                           <div key={hobby.name} className="flex items-start gap-4">
-                               <div className="bg-primary/10 text-primary p-3 rounded-full">
-                                <hobby.icon className="h-6 w-6" />
-                               </div>
-                               <div>
-                                   <h3 className="font-semibold text-lg">{hobby.name}</h3>
-                                   <p className="text-muted-foreground">{hobby.description}</p>
-                               </div>
-                           </div>
-                       ))}
-                    </CardContent>
-                </Card>
-            </div>
-            
-            <div className="space-y-12">
-                <Card>
-                    <CardHeader>
-                        <CardTitle>Connect with Me</CardTitle>
-                    </CardHeader>
-                    <CardContent className="flex flex-col space-y-4">
-                       {socialLinks.map(link => (
-                           <Button key={link.name} variant="outline" asChild className="justify-start">
-                               <a href={link.url} target="_blank" rel="noopener noreferrer">
-                                   <link.icon className="mr-3 h-5 w-5" />
-                                   {link.name}
-                               </a>
-                           </Button>
-                       ))}
-                    </CardContent>
-                </Card>
-            </div>
+                    ))}
+                </CardContent>
+            </Card>
           </div>
         </section>
 
